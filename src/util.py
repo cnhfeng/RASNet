@@ -30,7 +30,7 @@ def get_loss_s(parser,seq_input,voc_size):
 
     loss = 0
     
-    for _,m_target in enumerate(parser):
+    for i,m_target in enumerate(parser):
         null_med = np.zeros((voc_size[2]))
         null_med[seq_input[m_target][2]]=1
         loss += np.dot(med, null_med) / voc_size[2]
@@ -44,7 +44,10 @@ def get_loss_s(parser,seq_input,voc_size):
     #     null_pro = np.zeros((voc_size[1]))
     #     null_pro[seq_input[p_target][1]]=1
     #     loss += np.dot(pro, null_pro) / voc_size[1]
-    return -loss
+
+
+
+    return -loss / i
 
 def get_n_params(model):
     pp = 0
@@ -424,8 +427,9 @@ def buildMPNN(molecule, med_voc, radius=1, device="cpu:0"):
     average_projection = np.zeros((n_row, n_col))
     col_counter = 0
     for i, item in enumerate(average_index):
-        if item > 0:
-            average_projection[i, col_counter : col_counter + item] = 1 / item
+        if item == 0:
+            continue
+        average_projection[i, col_counter : col_counter + item] = 1 / item
         col_counter += item
 
     return MPNNSet, N_fingerprint, torch.FloatTensor(average_projection)
