@@ -10,12 +10,12 @@
 
 ## Folder Specification
 
-* data/output/
+* ```data/output/```
   * **ddi_A_final.pkl**: ddi adjacency matrix
   * **ehr_adj_final.pkl**: used in GAMENet baseline (if two drugs appear in one set, then they are connected)
   * **records_final.pkl**: The final diagnosis-procedure-medication EHR records of each patient
   * **voc_final.pkl**: diag/prod/med index to code dictionary
-* src/
+* ```src/```
   * **model.py**: Code for model definition.
   * **util.py**: Code for metric calculations and some data preparation.
   * **test.py**: Code for reproducing the paper results
