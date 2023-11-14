@@ -1,2 +1,2 @@
 # RASNet
-"RASNet: recurrent residual aggregation network for safety and efficiency medication recommendation"
+"RASNet: Recurrent Aggregation Neural Network for Safe and Efficient Drug Recommendation"
