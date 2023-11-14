@@ -31,7 +31,14 @@
   ```
 
 * then, in RASNet environment, install the following package
-
+  ```py
+  pip install scikit-learn, dill
+  ```
+* Finally, install other packages if necessary
+  ```py
+  pip install [xxx]
+  ```
+  Here is a list of reference versions for all package
   ```py
   pandas: 1.5.2
   dill: 0.3.6
