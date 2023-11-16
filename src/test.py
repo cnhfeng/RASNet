@@ -108,7 +108,7 @@ model = AllRecDrugModel(
         device=device,
     )
 
-resume_path = 'saved/Epoch_73_JA_0.5389_DDI_0.05993.model'
+resume_path = 'saved/best.model'
 parser = argparse.ArgumentParser()
 parser.add_argument("--resume_path", type=str, default=resume_path, help="resume path")
 parser.add_argument("--seed", type=int, default=8, help="resume path")
