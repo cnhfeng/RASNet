@@ -56,7 +56,10 @@ Run test.py to reproduce the results of the paper.
 cd src
 python test.py
 ```
+## Citation
+```python
 
+```
 Partial credit to previous reprostories:
 
 - https://github.com/sjy1203/GAMENet
