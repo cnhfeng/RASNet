@@ -58,7 +58,14 @@ python test.py
 ```
 ## Citation
 ```python
-
+@article{zhu2024rasnet,
+  title={RASNet: Recurrent aggregation neural network for safe and efficient drug recommendation},
+  author={Zhu, Qiang and Han, Feng and Yang, Huali and Liu, Junping and Hu, Xinrong and Wang, Bangchao},
+  journal={Knowledge-Based Systems},
+  pages={112055},
+  year={2024},
+  publisher={Elsevier}
+}
 ```
 Partial credit to previous reprostories:
 
