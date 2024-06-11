@@ -57,6 +57,9 @@ cd src
 python test.py
 ```
 ## Citation
+Related papers：- https://www.sciencedirect.com/science/article/pii/S0950705124006890
+
+If the code and the paper are useful for you, it is appreciable to cite our paper:
 ```python
 @article{zhu2024rasnet,
   title={RASNet: Recurrent aggregation neural network for safe and efficient drug recommendation},
